@@ -1,0 +1,14 @@
+<launch>
+
+<!-- MPC start -->
+<node pkg = "beginner_tutorials" type = "MPC_morai.py" name ="mpc_node" output = "screen" />
+
+<!-- traffic start -->
+<node pkg = "beginner_tutorials" type = "traffic_0726.py" name ="traffic_node"  />
+
+
+<!-- gpsimu start -->
+<node pkg = "beginner_tutorials" type = "gpsimu_parser.py" name = "gpsimu_node" />
+
+
+</launch>
